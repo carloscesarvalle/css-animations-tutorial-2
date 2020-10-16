@@ -237,3 +237,13 @@ h1 {
     width: 25vw;
     height: auto;
 }
+
+
+.footer {
+    margin-top: 120vh;
+    width: 100vw;
+    height: 30vh;
+    background-color: black;
+    position: absolute;
+    z-index: 6;
+}
