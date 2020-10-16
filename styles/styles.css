@@ -224,6 +224,16 @@ h1 {
 
 .floating-box {
     width: 20vw;
-    height: 35vh;
+    height: 40vh;
     background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.planet-create-section {
+    width: 25vw;
+    height: auto;
 }
