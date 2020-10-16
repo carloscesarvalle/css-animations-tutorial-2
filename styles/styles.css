@@ -125,7 +125,7 @@ li {
     width: 10%;
     height: auto;
     z-index: 4;
-    animation: rocket 8s linear 4S infinite normal;
+    animation: rocket 8s linear infinite normal;
     ;
 }
 
@@ -152,7 +152,7 @@ li {
     position: absolute;
     top: -11vh;
     z-index: 2;
-    animation: upperPlanets 8s ease-in-out 4s infinite normal;
+    animation: upperPlanets 8s ease-in-out infinite normal;
 }
 
 @keyframes upperPlanets {
