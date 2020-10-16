@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+}
+
+/* navigation bar */
+
+navbar {
+    width: 100vw;
+    height: 6.5vh;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    color: white;
+}
+
+#logo {
+    padding-left: 2vw;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+ul {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2vw;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* end of navigation bar */
+
+#background {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    /* background image */
+    background-image: url("../images/background.png");
+    /* The image used */
+    /* background-color: #cccccc; */
+    /* Used if the image is unavailable */
+    height: 100vh;
+    /* You must set a specified height */
+    background-position: top;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    /* position: absolute;
+    bottom: 0;
+    z-index: 1; */
+}
+
+.cloudFront {
+    width: 100vw;
+    position: absolute;
+    left: -0.05vw;
+    bottom: -7vh;
+    z-index: 5;
+    animation: cloudFront 8s linear infinite normal;
+}
+
+@keyframes cloudFront {
+    0% {
+        top: -7vh;
+    }
+
+    100% {
+        top: 0vh;
+    }
+}
+
+.bottom-planets {
+    width: 100vw;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#earth {
+    position: absolute;
+    bottom: -16vh;
+    width: 450px;
+    height: 450px;
+    animation: planet 100s linear infinite normal;
+    z-index: 3;
+}
+
+@keyframes planet {
+    from {
+        transform: rotate(0deg);
+        /* transform-origin: 50% 50%; */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* transform-origin: 50% 50%; */
+    }
+}
+
+.rocket {
+    top: 40vh;
+    position: absolute;
+    bottom: 0;
+    left: 45vw;
+    width: 10%;
+    height: auto;
+    z-index: 4;
+    animation: rocket 8s linear 4S infinite normal;
+    ;
+}
+
+@keyframes rocket {
+    0% {
+        transform: translateY(100vh);
+    }
+
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+#upper-planets {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 105vw;
+    background-image: url("../images/upper-planets.png");
+    height: 150vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -11vh;
+    z-index: 2;
+    animation: upperPlanets 8s ease-in-out 4s infinite normal;
+}
+
+@keyframes upperPlanets {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    62.5% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* about section  */
+
+
+.about {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    z-index: 6;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-left: 10vw;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#second-animation {
+    padding-left: 30vw;
+    width: 10vw;
+    height: 20vw;
+    background-image: url("../images/urban-landscape-with-large-little-buildings-trees-bushes-flat-design-style-vector-graphic-illustration_153791-52.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.create-your-rocket {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(25, 144, 212);
+}
